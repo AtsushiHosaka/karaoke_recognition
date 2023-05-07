@@ -82,17 +82,10 @@ class ViewController: UIViewController, VNDocumentCameraViewControllerDelegate {
                     recognitionButton.layer.borderWidth = 4
                     recognitionButton.layer.borderColor = UIColor.yellow.cgColor
                     
-//                    recognitionButton.addAction(.init { _ in print(recognitionButton.text) }, for: .touchUpInside)
                     recognitionButton.addTarget(self, action: #selector(aiueo), for: .touchUpInside)
                     
                     view.addSubview(recognitionButton)
                 }
-                
-                //                let boxView = UIView(frame: CGRect(x: box.origin.x * imageView.bounds.width, y: (1 - box.origin.y - box.size.height) * imageView.bounds.height, width: box.width * imageView.bounds.width, height: box.height * imageView.bounds.height))
-                
-                
-                //                boxView.backgroundColor = .black
-                //                imageView.addSubview(boxView)
             }
         }
     }
